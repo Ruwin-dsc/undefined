@@ -14,8 +14,11 @@ const config = require("./config")
 if(!config.guild_id || !config.message) return console.log("Manque d'information dans le fichier config (id du serveur ou message de dmall)")
 client.login(config.token).catch(()=> console.log("Veuillez entrer un token valide dans le fichier config !"))
 
-client.on("ready", ()=> {
+client.on("ready", async()=> {
+  console.log(client.user.tag+ " est bien en ligne !\n ------------------------------")
+   client.user.setStatus('invisible')
       const guild = client.guilds.cache.get(config.guild_id)
+      if(!guild) return console.log("L'identifant du serveur n'est pas bon !")
             guild.members.cache.forEach((user)=> {
                 setTimeout(()=> { 
                     user.user.send({
@@ -26,4 +29,3 @@ client.on("ready", ()=> {
 
             })
     })
-
