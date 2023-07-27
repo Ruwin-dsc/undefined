@@ -1,5 +1,26 @@
 {
   "dependencies": {
     "discord.js": "^14.11.0"
-  }
+  },
+  "name": "undefined",
+  "version": "0.0.3",
+  "description": "dmall bot by k3rm4",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k4rm1/undefined.git"
+  },
+  "keywords": [
+    "dmall"
+  ],
+  "author": "k4rm1",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/k4rm1/undefined/issues"
+  },
+  "homepage": "https://github.com/k4rm1/undefined#readme"
 }
